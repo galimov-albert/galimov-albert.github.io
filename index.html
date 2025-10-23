@@ -4,6 +4,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#070a0f">
+<meta name="color-scheme" content="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -36,7 +38,6 @@
     --space: 22px;
     --space-sm: 14px;
   }
-
   *{box-sizing:border-box}
   html,body{margin:0;padding:0}
   html{color-scheme: dark}
@@ -262,17 +263,6 @@
   @media (prefers-reduced-motion: reduce){
     *{transition:none !important; animation:none !important}
   }
-  @media (prefers-color-scheme: light){
-    :root{
-      --bg:#f5f7fb; --bg-elev:#f8faff; --card:#ffffff; --border:#e6e9f2;
-      --text:#0f172a; --muted:#4b5567; --link:#1d4ed8; --accent:#0ea5e9;
-      --ring:#22c3ff55;
-    }
-    html{color-scheme: light}
-    body{background: var(--bg)}
-    section, .card{box-shadow: none; border:1px solid #e6e9f2}
-  }
-
   @media print{
     body{background:#fff;color:#111}
     section, .card{box-shadow:none;border:1px solid #ddd}
